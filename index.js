@@ -40,18 +40,13 @@ btnFib.addEventListener("click", function(e){
 });
 
 btnFib.addEventListener("click", function(e){
-    let auxInput = Number(inputFib.value);
-    let primeiro = 0;
-    let segundo = 1;
-    let terceiro = 0;
-    let lista = [primeiro, segundo];
+    let auxInput = Number(inputPirmo.value);
+    let aux = false;
     for (let i = 0; i < auxInput - 1; i++) {
-        terceiro = primeiro + segundo;
-        primeiro = segundo;
-        segundo = terceiro;
-        lista.push(terceiro);
+        
+
     }
     if(auxInput !== 0){
-        saidaFib.innerHTML = lista;        
+        saidaPrimo.innerHTML = lista;        
     }
 });
