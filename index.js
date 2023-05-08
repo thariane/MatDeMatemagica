@@ -44,7 +44,7 @@ btnPrimo.addEventListener("click", function(e){
     let aux = false;
     for (let i = 2; i < auxInput; i++) {
         if(auxInput%i === 0){
-             aux = true;
+            aux = true;
         }
     }
     if(!aux){
