@@ -39,14 +39,17 @@ btnFib.addEventListener("click", function(e){
     }
 });
 
-btnFib.addEventListener("click", function(e){
-    let auxInput = Number(inputPirmo.value);
+btnPrimo.addEventListener("click", function(e){
+    let auxInput = Number(inputPrimo.value);
     let aux = false;
-    for (let i = 0; i < auxInput - 1; i++) {
-        
-
+    for (let i = 2; i < auxInput; i++) {
+        if(auxInput%i === 0){
+             aux = true;
+        }
     }
-    if(auxInput !== 0){
-        saidaPrimo.innerHTML = lista;        
+    if(!aux){
+        saidaPrimo.innerHTML = "É primo!";        
+    } else{
+        saidaPrimo.innerHTML = "Não é primo!";
     }
 });
