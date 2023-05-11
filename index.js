@@ -11,6 +11,29 @@ let btnPrimo = document.getElementById("btn-primo");
 let inputPrimo = document.getElementById("inputPrimo");
 let saidaPrimo = document.getElementById("saidaPrimo");
 
+let btnCaixaAlta = document.getElementById("btn-CaixaAlta");
+let inputCaixaAlta = document.getElementById("inputCaixaAlta");
+let saidaCaixaAlta = document.getElementById("saidaCaixaAlta");
+
+let btnConversorMoeda = document.getElementById("btn-ConversorMoeda");
+let inputConversorMoedaUSD = document.getElementById("inputConversorMoedaUSD");
+let inputConversorMoedaReal = document.getElementById("inputConversorMoedaReal");
+let saidaConversorMoeda = document.getElementById("saidaConversorMoeda");
+
+btnConversorMoeda.addEventListener("click", function(e){   
+    let dolar = Number(inputConversorMoedaUSD.value.replace(',', '.'));
+    let real = Number(inputConversorMoedaReal.value.replace(',', '.'));
+    let saida = real/dolar;
+    
+    console.log(dolar);
+    
+    saidaConversorMoeda.innerHTML = saida.toFixed(2);
+});
+
+btnCaixaAlta.addEventListener("click", function(e){   
+    saidaCaixaAlta.innerHTML = inputCaixaAlta.value.toUpperCase(); 
+});
+
 btnFat.addEventListener("click", function(e){
     let input = Number(inputFat.value);
     let aux = input;
