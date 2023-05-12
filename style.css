@@ -1,13 +1,16 @@
 .body{
     width: 100%;
 }
+
 #saida{
     color: rgb(69, 16, 191);
 }
-button{
-    position: relative;
-    left: 40em;
-}
+
+button {
+    display: block;
+    margin: 0 auto;
+  }
+  
 
 input {
     display: block;
@@ -48,3 +51,12 @@ button:hover{
     transform: scale(1.04);
     background-color: #21e065;
 }
+
+select {
+    background-color: #21e065;
+    color: #fff; /* texto em branco */
+    padding: 10px; /* adiciona espaçamento interno */
+    border: none; /* remove borda padrão */
+    border-radius: 5px; /* adiciona bordas arredondadas */
+  }
+  

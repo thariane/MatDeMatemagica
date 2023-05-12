@@ -20,6 +20,28 @@ let inputConversorMoedaUSD = document.getElementById("inputConversorMoedaUSD");
 let inputConversorMoedaReal = document.getElementById("inputConversorMoedaReal");
 let saidaConversorMoeda = document.getElementById("saidaConversorMoeda");
 
+let btnConversorMoedaAuto = document.getElementById("btn-ConversorMoedaAuto");
+let inputConversorMoedaRealAuto = document.getElementById("inputConversorMoedaRealAuto");
+let selectMoedaAuto = document.getElementById("moedas");
+let saidaConversorMoedaAuto = document.getElementById("saidaConversorMoedaAuto");
+
+/*
+ *Projeto Futuro
+ **/
+//selectMoedaAuto.addEventListener('click', function(e){
+//    selectMoedaAuto.addEventListener('change', function(){
+//        console.log(selectMoedaAuto.value);
+//    })
+//})
+
+btnConversorMoedaAuto.addEventListener('click', function(){
+    let real = Number(inputConversorMoedaRealAuto.value.replace(',', '.'));    
+    let moedaConversao = Number(selectMoedaAuto.value);
+    let saida = real/moedaConversao;
+    saidaConversorMoedaAuto.innerHTML = saida.toFixed(2);
+})
+
+
 btnConversorMoeda.addEventListener("click", function(e){   
     let dolar = Number(inputConversorMoedaUSD.value.replace(',', '.'));
     let real = Number(inputConversorMoedaReal.value.replace(',', '.'));
