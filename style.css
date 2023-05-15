@@ -44,19 +44,19 @@ button {
     text-align: center;
     padding: 17px 48px;
     color: #fff;
-    background-color: #1ED760;
+    background-color: #09b1a3;
     height: 48px;
 }
 button:hover{
     transform: scale(1.04);
-    background-color: #21e065;
+    background-color: #ba21e0;
 }
 
 select {
-    background-color: #21e065;
+    background-color: #09b1a3;
     color: #fff; /* texto em branco */
     padding: 10px; /* adiciona espaçamento interno */
-    border: none; /* remove borda padrão */
+    border: 1px solid transparent;
     border-radius: 5px; /* adiciona bordas arredondadas */
   }
   
