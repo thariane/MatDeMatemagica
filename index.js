@@ -25,6 +25,10 @@ let inputConversorMoedaRealAuto = document.getElementById("inputConversorMoedaRe
 let selectMoedaAuto = document.getElementById("moedas");
 let saidaConversorMoedaAuto = document.getElementById("saidaConversorMoedaAuto");
 
+let btnMetrosCubicos = document.getElementById("btn-MetrosCubicos");
+let inputMetrosCubicos = document.getElementById("inputMetrosCubicos");
+let saidaMetrosCubicos = document.getElementById("saidaMetrosCubicos");
+
 /*
  *Projeto Futuro
  **/
@@ -33,6 +37,13 @@ let saidaConversorMoedaAuto = document.getElementById("saidaConversorMoedaAuto")
 //        console.log(selectMoedaAuto.value);
 //    })
 //})
+
+btnMetrosCubicos.addEventListener("click", function(e){   
+    let valorMetrosCubicos = Number(inputMetrosCubicos.value.replace(',', '.'));
+    let saidalitros = valorMetrosCubicos * 1000;
+
+    saidaMetrosCubicos.innerHTML = saidalitros.toFixed(2) + " Litros";
+});
 
 btnConversorMoedaAuto.addEventListener('click', function(){
     let real = Number(inputConversorMoedaRealAuto.value.replace(',', '.'));    
