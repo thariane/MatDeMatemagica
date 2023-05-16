@@ -42,7 +42,7 @@ btnMetrosCubicos.addEventListener("click", function(e){
     let valorMetrosCubicos = Number(inputMetrosCubicos.value.replace(',', '.'));
     let saidalitros = valorMetrosCubicos * 1000;
 
-    saidaMetrosCubicos.innerHTML = saidalitros.toFixed(2) + " Litros";
+    saidaMetrosCubicos.innerHTML = `${saidalitros.toFixed(2)} Litros`;
 });
 
 btnConversorMoedaAuto.addEventListener('click', function(){
