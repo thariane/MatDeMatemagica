@@ -29,6 +29,10 @@ let btnMetrosCubicos = document.getElementById("btn-MetrosCubicos");
 let inputMetrosCubicos = document.getElementById("inputMetrosCubicos");
 let saidaMetrosCubicos = document.getElementById("saidaMetrosCubicos");
 
+let btnConversorCparaF = document.getElementById("btn-ConversorCparaF");
+let inputConversorCparaF = document.getElementById("inputConversorCparaF");
+let saidaConversorCparaF = document.getElementById("saidaConversorCparaF");
+
 /*
  *Projeto Futuro
  **/
@@ -38,11 +42,11 @@ let saidaMetrosCubicos = document.getElementById("saidaMetrosCubicos");
 //    })
 //})
 
-btnMetrosCubicos.addEventListener("click", function(e){   
-    let valorMetrosCubicos = Number(inputMetrosCubicos.value.replace(',', '.'));
-    let saidalitros = valorMetrosCubicos * 1000;
+btnConversorCparaF.addEventListener("click", function(e){   
+    let valorConversorCparaF = Number(inputConversorCparaF.value.replace(',', '.'));
+    let saidaFahrenheit= (valorConversorCparaF * 9/5) + 32;
 
-    saidaMetrosCubicos.innerHTML = `${saidalitros.toFixed(2)} Litros`;
+    saidaConversorCparaF.innerHTML = `${saidaFahrenheit.toFixed(2)} Litros`;
 });
 
 btnConversorMoedaAuto.addEventListener('click', function(){
