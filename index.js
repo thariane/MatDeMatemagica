@@ -30,7 +30,7 @@ let inputMetrosCubicos = document.getElementById("inputMetrosCubicos");
 let saidaMetrosCubicos = document.getElementById("saidaMetrosCubicos");
 
 let btnConversorCparaF = document.getElementById("btn-ConversorCparaF");
-let inputConversorCparaF = document.getElementById("inputConversorCparaF");
+let inputConversorCparaF = document.getElementById("ConversorCparaF");
 let saidaConversorCparaF = document.getElementById("saidaConversorCparaF");
 
 /*
@@ -42,11 +42,11 @@ let saidaConversorCparaF = document.getElementById("saidaConversorCparaF");
 //    })
 //})
 
-btnConversorCparaF.addEventListener("click", function(e){   
+btnConversorCparaF.addEventListener("click", function(e){
     let valorConversorCparaF = Number(inputConversorCparaF.value.replace(',', '.'));
-    let saidaFahrenheit= (valorConversorCparaF * 9/5) + 32;
+    let saidaFahrenheit = (valorConversorCparaF * 9/5) + 32;
 
-    saidaConversorCparaF.innerHTML = `${saidaFahrenheit.toFixed(2)} Litros`;
+    saidaConversorCparaF.innerHTML = `${saidaFahrenheit.toFixed(2)} Grau Fahrenheit`;
 });
 
 btnConversorMoedaAuto.addEventListener('click', function(){
