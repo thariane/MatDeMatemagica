@@ -46,7 +46,7 @@ btnConversorCparaF.addEventListener("click", function(e){
     let valorConversorCparaF = Number(inputConversorCparaF.value.replace(',', '.'));
     let saidaFahrenheit = (valorConversorCparaF * 9/5) + 32;
 
-    saidaConversorCparaF.innerHTML = `${saidaFahrenheit.toFixed(2)} Grau Fahrenheit`;
+    saidaConversorCparaF.innerHTML = `${saidaFahrenheit.toFixed(2)} Graus Fahrenheit`;
 });
 
 btnConversorMoedaAuto.addEventListener('click', function(){
